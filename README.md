@@ -77,7 +77,7 @@ APP_ENV="production" COUNTRY_CODE="US" ZIP_CODE="20057" python -m app.daily_brie
 
 ### Web Application
 
-Running the web app:
+Running the web app (then view localhost:5000 in the browser):
 
 ```sh
 # Mac OS:
