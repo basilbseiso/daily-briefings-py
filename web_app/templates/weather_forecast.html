@@ -11,7 +11,7 @@
     <table>
     {% for forecast in results["hourly_forecasts"] %}
         <tr><td>{{ forecast["timestamp"] }} | {{ forecast["temp"] }} | {{ forecast["conditions"].upper() }}</tr></td>
-        <tr><td><img src="{{ forecast["image_url"] }}"</tr></td>
+        <tr><td><img src="{{ forecast["image_url"] }}"></tr></td>
     {% endfor %}
     </table>
 
