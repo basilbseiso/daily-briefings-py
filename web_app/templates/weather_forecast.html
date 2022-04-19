@@ -10,7 +10,7 @@
     <!-- TODO: consider adding images using the provided icon urls -->
     <table>
     {% for forecast in results["hourly_forecasts"] %}
-        <tr><td>{{ forecast["timestamp"] }} | {{ forecast["temp"] }} | {{ forecast["conditions"].upper() }}</tr></td><tr><td><img src="https://api.weather.gov/icons"></tr></td>
+        <tr><td>{{ forecast["timestamp"] }} | {{ forecast["temp"] }} | {{ forecast["conditions"].upper() }}</tr></td><tr><td><img src="https://api.weather.gov/icons/sct"></tr></td>
     {% endfor %}
     </table>
 
