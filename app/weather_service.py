@@ -4,7 +4,6 @@ import os
 import json
 from pprint import pprint
 from dateutil.parser import parse as parse_datetime
-from IPython.display import Image, display
 
 import requests
 from dotenv import load_dotenv
@@ -123,4 +122,3 @@ if __name__ == "__main__":
 
     for forecast in result["hourly_forecasts"]:
         print(forecast["timestamp"], "|", forecast["temp"], "|", forecast["conditions"])
-        display(Image(url=forecast['icon']))
